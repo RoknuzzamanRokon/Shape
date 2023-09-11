@@ -25,5 +25,27 @@ def fibonacci(value):
 fibonacci(10)
 
 
+# Genarte Fibonacci number using Class method.
+class Fibonacci_sequence:
+    def __init__(self, user_value):
+        self.user_value = user_value
+        self.n1 = 0
+        self.n2 = 1
+        self.count = 0
+
+
+    def fibonacci_c_f(self):
+        while self.count < self.user_value:
+            print(self.n1)
+            x = self.n1 + self.n2
+            self.n1 = self.n2
+            self.n2 = x
+            self.count += 1
+
+
+object_attribute = Fibonacci_sequence(10)
+
+object_attribute.fibonacci_c_f()
+
 
 
