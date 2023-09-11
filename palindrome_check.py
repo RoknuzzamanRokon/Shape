@@ -25,6 +25,8 @@ for x in range(10,100):
 # using class base function
 
 
+
+# Class base function.
 class Perindromes:
     def __init__(self, string_value):
         self.value = string_value
@@ -38,7 +40,6 @@ user = str(input("input a number: "))
 revarce_str = Perindromes(user)
 
 revarce_str_result = revarce_str.function()
-print(revarce_str_result)
 
 if user == revarce_str_result:
     print("This is palindrome : ")
